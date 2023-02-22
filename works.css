@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    /* background-color: #f6f8ff; */
+}
+
+.row {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    top: 80px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 2 0px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 80%;
+}
+
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+    background-color: #fff;
+    box-shadow: 0 2px 11px 5px rgba(14, 36, 49, 0.04);
+}
+
+.works {
+    display: flex;
+    font-size: 30px;
+    font-weight: 800;
+    color: #0E2431;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+b {
+    font-size: 60px;
+    color: #4070F4;
+}
+
+.nav_items {
+    display: flex;
+}
+
+.nav_items li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.nav_items li a {
+    font-size: 18px;
+    color: #0E2431;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.nav_items li:hover a {
+    color: #4070F4;
+    text-decoration: underline;
+}
+
+/* #posters a:visited {
+    color: #4070F4;
+    text-decoration: underline;
+
+} */
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+.btn button {
+    z-index: 1;
+    width: 3.7em;
+    height: 3.7em;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(0deg, #4070F4, rgb(150, 227, 255));
+    display: block;
+    position: fixed;
+    left: 2.3em;
+    top: 1.2em;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 12px 55px 2px rgba(5, 14, 24, 0.65);
+    opacity: 100%;
+    transition: 0.4s;
+
+}
+
+.btn #back {
+    display: inline-block;
+    width: 30px;
+    font-size: 16px;
+    color: #DBE2EF;
+}
+
+button:hover {
+    opacity: 70%;
+}
